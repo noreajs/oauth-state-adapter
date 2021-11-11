@@ -1,15 +1,15 @@
 {
   "name": "oauth-state-adapter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create and share between workers, OAUTH state for authorization code, authorization code with PKCE and implicit grants",
   "main": "dist/index.js",
   "directories": {
-      "lib": "dist"
+    "lib": "dist"
   },
   "scripts": {
-      "test": "echo \"No test specified\"",
-      "build": "tsc",
-      "prepare": "tsc"
+    "test": "echo \"No test specified\"",
+    "build": "tsc",
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
