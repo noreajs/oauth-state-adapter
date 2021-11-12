@@ -1,6 +1,6 @@
 {
   "name": "oauth-state-adapter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create and share between workers, OAUTH state for authorization code, authorization code with PKCE and implicit grants",
   "main": "dist/index.js",
   "directories": {
