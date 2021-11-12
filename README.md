@@ -6,11 +6,11 @@ Create and share OAUTH state (authorization code, authorization code with PKCE a
 
 ### Why?
 
-You have many workers run on the same port and all integrating oauth v2 connection.
+You have many workers running on the same port and all integrating Oauth v2 based authentication.
 
-Let's see the authorization code flow as example. A request for `authorization code` is send to the oauth server with a `state` that we generated on purpose for this request. When the oauth server send back a response with a code, the probability for the same worker to handle the request is almost zero.
+Let's see the `authorization code` flow as example. A request to get a `code` is sent to the oauth server with a `state` that we generate (should be unique for each request). When the Oauth server send back a response with the code, the probability for the same worker which send the request to handle the response (redirection) is almost zero.
 
-We need a way to share `states` between workers so whatever the worker who receive the answer, we'll able to validate the request and get the token.
+We need a way to share `states` between workers so whatever the worker which catch the redirection, It'll able to validate the state and get the token.
 
 ### Installation
 
