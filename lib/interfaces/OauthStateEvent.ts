@@ -1,0 +1,7 @@
+enum OauthStateEvent {
+  ADD_OAUTH_STATE = "ADD_OAUTH_STATE",
+  REMOVE_OAUTH_STATE = "REMOVE_OAUTH_STATE",
+  OAUTH_STATE_LIST = "OAUTH_STATE_LIST",
+}
+
+export default OauthStateEvent;
